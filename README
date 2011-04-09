@@ -1,0 +1,3 @@
+;; My dot emacs file points to busilogic.el in my Dropbox/emacs folder 
+;; Using Dropbox to access from anywhere
+(load-file "~/Dropbox/emacs/busilogic.el")
