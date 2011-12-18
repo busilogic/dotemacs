@@ -31,10 +31,7 @@
 ;(autoload 'html-helper-mode "html-helper-mode" "Yay HTML" t)
 ;(setq auto-mode-alist (cons '("\\.html$" . html-helper-mode)       
 ;			    auto-mode-alist))
-
 ;(load-file "~/Dropbox/emacs/vendor/emacs-for-python/epy-init.el")
-
-
 
 ;; ----------------------------------------------
 ;; Custom keyboard mappings 
@@ -44,10 +41,16 @@
 (global-set-key "\C-c\C-m" 'execute-extended-command)
 (column-number-mode 1)
 
-(line-number-mode 1)
+
+;; ----------------------------------------------
+;; emacs visual layout
+;; ----------------------------------------------
 
 ;; Set window title to full file name
 (setq frame-title-format '("Emacs @ " system-name ": %b %+%+ %f"))
+
+
+(line-number-mode 1)
 
 ;; You don't need a menu bar. It's just a crutch placed there for 
 ;; disoriented newbies. You also don't need a toolbar with big happy icons, ;; nor do you need a scrollbar. 
@@ -59,12 +62,6 @@
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
 (if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
 
-
-;; =============================================================
-;; Publish website using org mode
-;(load-file "~/Dropbox/emacs/website_using_org_mode.el")
-
-
 ;; ----------------------------------------------
 ;; Org mode
 ;; customizations 
@@ -75,3 +72,6 @@
 (global-set-key "\C-cc" 'org-capture)
 (global-set-key "\C-ca" 'org-agenda)
 (global-set-key "\C-cb" 'org-iswitchb)
+
+;; Publish website using org mode
+;(load-file "~/Dropbox/emacs/website_using_org_mode.el")

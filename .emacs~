@@ -16,7 +16,7 @@
 ;; ----------------------------------------------
 ;; Color theme
 ;; ----------------------------------------------
-;(load-file "~/Dropbox/emacs/vendor/colors-init.el")
+(load-file "~/Dropbox/emacs/vendor/colors-init.el")
 (load-file "~/Dropbox/emacs/vendor/color-theme-6.6.0/themes/color-theme-blackboard.el")
 (require 'color-theme)
 (eval-after-load "color-theme" 
