@@ -1,3 +1,5 @@
-;; My dot emacs file points to busilogic.el in my Dropbox/emacs folder 
-;; Using Dropbox to access from anywhere
-(load-file "~/Dropbox/emacs/busilogic.el")
+My dot emacs file.
+Free to use or snip what you like. Afterall, that's how mine started.
+
+Store your dot emacs file in dropbox if you want to access it at multiple PCs
+on different networks.
