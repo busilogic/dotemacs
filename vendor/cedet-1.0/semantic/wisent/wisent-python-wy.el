@@ -2,8 +2,8 @@
 
 ;; Copyright (C) 2002, 2003, 2004, 2007 Richard Kim
 
-;; Author: Eric M. Ludlam <zappo@projectile.siege-engine.com>
-;; Created: 2010-08-22 20:55:22-0400
+;; Author: Kiran Busi <kbusi@bender.local>
+;; Created: 2011-12-28 17:30:59+1100
 ;; Keywords: syntax
 ;; X-RCS: $Id$
 
