@@ -1,30 +1,28 @@
 ;;
 ;; Kiran's .emacs file
-
 ;; Add to load path
-(add-to-list 'load-path "~/Dropbox/emacs/")
-(add-to-list 'load-path "~/Dropbox/emacs/vendor/")
+;(add-to-list 'load-path "~/Dropbox/emacs/")
+;(add-to-list 'load-path "~/Dropbox/emacs/vendor/")
 
 ;; Use Emacs starter kit which is incorporated with emacs-for-python kit
 (load-file "~/Dropbox/emacs/vendor/emacs-starter-kit/init.el")
+
 (load-file "~/Dropbox/emacs/website_using_org_mode.el")
 
+;(require 'ipython)
 
-;(add-to-list 'load-path "~/Dropbox/emacs/vendor/o-blog")
-;(require 'o-blog)
-
-(require 'ipython)
-
-(add-to-list 'load-path "~/Dropbox/emacs/vendor/coffee-mode")
-(require 'coffee-mode)
+;(add-to-list 'load-path "~/Dropbox/emacs/vendor/coffee-mode")
+;(require 'coffee-mode)
 
 ; Use 2 spaces for coffescript
-(defun coffee-custom ()
-  "coffee-mode-hook"
- (set (make-local-variable 'tab-width) 2))
-
-(add-hook 'coffee-mode-hook
-          '(lambda() (coffee-custom)))
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (defun coffee-custom ()                     ;;
+;;   "coffee-mode-hook"                        ;;
+;;   (set (make-local-variable 'tab-width) 2)) ;;
+;;                                             ;;
+;; (add-hook 'coffee-mode-hook                 ;;
+;;           '(lambda() (coffee-custom)))           ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 
 ;; ----------------------------------------------
@@ -41,9 +39,10 @@
 ;; journal M-x-journal creates a txt file with
 ;; today's data & stores it in directory specfied
 ;; ----------------------------------------------
-(load "journal")
-(if (file-directory-p "~/Documents/journal/")
-    (setq-default journal-dir "~/Documents/journal/"))
+;(load "journal")
+;(if (file-directory-p "~/Documents/journal/")
+;    (setq-default journal-dir "~/Documents/journal/"))
+
 
 ;; Gnu setup
 ;; Need to have a .authinfo file in your home directory

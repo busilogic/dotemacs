@@ -12,7 +12,7 @@
  	("org-notes"
  	 :base-directory "~/Dropbox/org/website/"
  	 :base-extension "org"
- 	 :publishing-directory "~/public_html/"
+ 	 :publishing-directory "~/Devel/busilogic.github.com/"
  	 :recursive t
  	 :publishing-function org-publish-org-to-html
  	 :headline-levels 3             ; Just the default for this project.
@@ -29,7 +29,7 @@
 	("org-static"
 	 :base-directory "~/Dropbox/org/website/"
 	 :base-extension "css\\|js\\|png\\|jpg\\|gif\\|pdf\\|mp3\\|ogg\\|swf\\|img"
-	 :publishing-directory "~/public_html/"
+	 :publishing-directory "~/Devel/busilogic.github.com/"
 	 :recursive t
 	 :publishing-function org-publish-attachment
 	 )
