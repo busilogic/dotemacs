@@ -7,7 +7,7 @@
 ;; Use Emacs starter kit which is incorporated with emacs-for-python kit
 (load-file "~/Dropbox/emacs/vendor/emacs-starter-kit/init.el")
 
-(load-file "~/Dropbox/emacs/website_using_org_mode.el")
+(load-file "~/Dropbox/emacs/org2html.el")
 
 ;(require 'ipython)
 
