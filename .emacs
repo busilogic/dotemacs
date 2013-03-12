@@ -1,15 +1,17 @@
 ;; Kiran's .emacs file
 
-;; Add to load path
+ ;; Add to load path
 (add-to-list 'load-path "~/Dropbox/emacs/")
 (add-to-list 'load-path "~/Dropbox/emacs/vendor/")
 
 ;; turn on line numbers
-;;(global-linum-mode 1)
+(global-linum-mode 1)
 
-(load "journal")
-(if (file-directory-p "~/Documents/journal/")
-    (setq-default journal-dir "~/Documents/journal/"))
+;; Save file as .gpg extension
+;; Put his on top of your file to turn into org mode on load
+;;-*- mode: org -*- -*- epa-file-encrypt-to: ("your@email.com") -*-
+;(setq epg-gpg-program "/opt/local/bin/gpg")
+
 
 
 
@@ -63,4 +65,7 @@
 ;; journal M-x-journal creates a txt file with
 ;; today's data & stores it in directory specfied
 ;; ----------------------------------------------
+(load "journal")
+(if (file-directory-p "~/Documents/journal/")
+    (setq-default journal-dir "~/Documents/journal/"))
 

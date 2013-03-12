@@ -20,7 +20,7 @@
  	 :auto-preamble nil
          :html-preamble "<a href=\"index.html\">KB</a> | 
                          <a href=\"http://kbusi.tumblr.com\">blog</a> |
-                         <a href=\"notes.html\">notes</a> 
+                         <a class=\"\" href=\"notes.html\">notes</a> 
                           "
 	 :section-numbers nil
 	 :table-of-contents nil
