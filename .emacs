@@ -1,7 +1,7 @@
 ;; Kiran's .emacs file
 
  ;; Add to load path
-(add-to-list 'load-path "~/Dropbox/emacs/")
+;(add-to-list 'load-path "~/Dropbox/emacs/")
 (add-to-list 'load-path "~/Dropbox/emacs/vendor/")
 
 ;; turn on line numbers
@@ -11,9 +11,6 @@
 ;; Put his on top of your file to turn into org mode on load
 ;;-*- mode: org -*- -*- epa-file-encrypt-to: ("your@email.com") -*-
 ;(setq epg-gpg-program "/opt/local/bin/gpg")
-
-
-
 
 ;; magit
 (add-to-list 'load-path "~/Dropbox/emacs/vendor/magit-1.1.1")
@@ -29,7 +26,7 @@
       debug-on-signal nil
       debug-on-quit nil)
 
-(load-file "~/Dropbox/emacs/vendor/emacs-for-python/epy-init.el")
+;(load-file "~/Dropbox/emacs/vendor/emacs-for-python/epy-init.el")
 ;; Get rid of cannot find flyspell error.
 ;; Install aspell via brew
 ;; http://blog.roder.me/post/2646673317/fixing-flyspell-for-emacs-in-mac-os-x
