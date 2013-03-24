@@ -18,7 +18,7 @@
  	 :publishing-function org-publish-org-to-html
  	 :headline-levels 3     
  	 :auto-preamble nil
-         :html-preamble "<a href=\"index.html\">KB</a> | 
+         :html-preamble "<a href=\"index.html\">home</a> | 
                          <a href=\"http://kbusi.tumblr.com\">blog</a> |
                          <a class=\"\" href=\"notes.html\">notes</a> 
                           "

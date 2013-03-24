@@ -1,11 +1,13 @@
 ;; Kiran's .emacs file
 
- ;; Add to load path
-;(add-to-list 'load-path "~/Dropbox/emacs/")
-(add-to-list 'load-path "~/Dropbox/emacs/vendor/")
+(ecb-activate)
+(setq stack-trace-on-error t)
 
-;; turn on line numbers
-(global-linum-mode 1)
+;; No splash screen please ... jeez
+(setq inhibit-startup-message t)
+
+(add-to-list 'load-path "~/Dropbox/emacs")
+(add-to-list 'load-path "~/Dropbox/emacs/vendor")
 
 ;; Save file as .gpg extension
 ;; Put his on top of your file to turn into org mode on load
@@ -13,8 +15,8 @@
 ;(setq epg-gpg-program "/opt/local/bin/gpg")
 
 ;; magit
-(add-to-list 'load-path "~/Dropbox/emacs/vendor/magit-1.1.1")
-(require 'magit)
+;(add-to-list 'load-path "~/Dropbox/emacs/vendor/magit-1.1.1")
+;(require 'magit)
 
 ;; Use Emacs starter kit which is incorporated with emacs-for-python kit
 (load-file "~/Dropbox/emacs/vendor/emacs-starter-kit/init.el")
@@ -25,16 +27,6 @@
 (setq debug-on-error t
       debug-on-signal nil
       debug-on-quit nil)
-
-;(load-file "~/Dropbox/emacs/vendor/emacs-for-python/epy-init.el")
-;; Get rid of cannot find flyspell error.
-;; Install aspell via brew
-;; http://blog.roder.me/post/2646673317/fixing-flyspell-for-emacs-in-mac-os-x
-;; add usr/local/bin to path
-;; http://blog.sdqali.in/blog/2012/05/04/fixing-flyspell-for-emacs-in-mac-os-x/
-;(setenv "PATH" (concat (getenv "PATH") ":/usr/local/bin"))
-;(setq exec-path (append exec-path '("/usr/local/bin")))
-
 
 ;; Set to the location of your Org files on your local system
 ;(setq org-directory "~/Dropbox/org")
