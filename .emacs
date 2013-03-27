@@ -1,7 +1,6 @@
 ;; Kiran's .emacs file
 
-(ecb-activate)
-(setq stack-trace-on-error t)
+
 
 ;; No splash screen please ... jeez
 (setq inhibit-startup-message t)
@@ -58,3 +57,5 @@
 (if (file-directory-p "~/Documents/journal/")
     (setq-default journal-dir "~/Documents/journal/"))
 
+(ecb-activate)
+(setq stack-trace-on-error t)
