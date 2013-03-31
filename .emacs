@@ -7,6 +7,8 @@
 
 (add-to-list 'load-path "~/Dropbox/emacs")
 (add-to-list 'load-path "~/Dropbox/emacs/vendor")
+(load-file "~/Dropbox/emacs/vendor/Pymacs/pymacs.el")
+(setq py-load-pymacs-p 'nil)
 
 ;; Save file as .gpg extension
 ;; Put his on top of your file to turn into org mode on load
@@ -14,8 +16,8 @@
 ;(setq epg-gpg-program "/opt/local/bin/gpg")
 
 ;; magit
-;(add-to-list 'load-path "~/Dropbox/emacs/vendor/magit-1.1.1")
-;(require 'magit)
+(add-to-list 'load-path "~/Dropbox/emacs/vendor/magit-1.2.0")
+(require 'magit)
 
 ;; Use Emacs starter kit which is incorporated with emacs-for-python kit
 (load-file "~/Dropbox/emacs/vendor/emacs-starter-kit/init.el")
@@ -57,5 +59,6 @@
 (if (file-directory-p "~/Documents/journal/")
     (setq-default journal-dir "~/Documents/journal/"))
 
-(ecb-activate)
-(setq stack-trace-on-error t)
+;(ecb-activate)
+;(setq stack-trace-on-error t)
+

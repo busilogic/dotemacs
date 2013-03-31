@@ -8,20 +8,17 @@
 
 (setq org-publish-project-alist
       '(
-	
 	;; notes component publishes all org-mode files to html
  	("org-notes"
  	 :base-directory "~/Dropbox/org/website/org-files/"
  	 :base-extension "org"
- 	 :publishing-directory "~/Dropbox/org/website/busilogic.github.com/"
+ 	 :publishing-directory "~/Devel/kiranbusi.com/"
  	 :recursive t
  	 :publishing-function org-publish-org-to-html
  	 :headline-levels 3     
- 	 :auto-preamble nil
+ 	 :auto-preamble t
          :html-preamble "<a href=\"index.html\">home</a> | 
-                         <a href=\"http://kbusi.tumblr.com\">blog</a> |
-                         <a class=\"\" href=\"notes.html\">notes</a> 
-                          "
+                         <a href=\"notes.html\">notes</a>"
 	 :section-numbers nil
 	 :table-of-contents nil
 	 :style "<link rel=\"stylesheet\" type=\"text/css\" href=\"css/style.css\" />
@@ -36,7 +33,7 @@
 	("org-static"
 	 :base-directory "~/Dropbox/org/website/org-files/"
 	 :base-extension "css\\|js\\|png\\|jpg\\|gif\\|pdf\\|mp3\\|ogg\\|swf\\|img"
-	 :publishing-directory "~/Dropbox/org/website/busilogic.github.com/"
+	 :publishing-directory "~/Devel/kiranbusi.com/"
 	 :recursive t
 	 :publishing-function org-publish-attachment
 	 )
